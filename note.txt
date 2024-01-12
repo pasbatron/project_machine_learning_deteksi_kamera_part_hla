@@ -1,0 +1,124 @@
+
+//install_________________________:
+pip install -r requirements.txt
+pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+//ubuntu install_________________________:
+pip3 install --upgrade torch torchvision torchaudio
+
+
+
+//python_________________________:
+torch.cuda.is.available()
+
+//train_________________________:
+yolo task=detect mode=train epochs=5 data=data.yaml model=yolov8m.pt imgsz=640 batch=8 patience=128
+
+Run Yolo__________________:
+yolo task=detect mode=predict model=best.pt show=True conf=0.6 source="" save_txt=True line_width=1 show_labels=True hide_conf=False
+yolo task=detect mode=predict model=best.pt show=True conf=0.6 source="rtsp://admin:pt_otics1*@192.168.1.108" save_txt=False line_width=1 show_labels=True
+
+
+# sample data
+# on_good,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12;
+# on_ng,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12;
+#directori
+cd D:\on\Project_PT_Otics_Image_Processing_HLA\Version 1.1
+cd D:\on\python,  env39\scripts\activate.bat
+
+
+
+
+
+//Jetson orin nano
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt install build-essential libssl-dev zliblg-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev liblzma-dev libffi-dev libffi-dev libc6-dev
+
+download python
+wget https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tar.xz
+tar -xf Python-3.8.12.tar.xz
+cd Python-3.8.12
+
+
+sudo usermod -a -G dialout wanda
+https://github.com/snapcrafters/arduino/issues/
+
+
+sudo /opt/lampp/lampp start
+sudo apt install net-tools
+
+source env310/bin/activate
+
+
+
+// jetson___________________________________:
+sudo apt-get update
+sudo apt-get install git cmake libpython3-dev python3-numpy
+git clone --recursive https://github.com/dusty-nv/jetson-inference
+cd jetson-inference
+mkdir build
+cd build
+cmake ../ #install pytorch
+make
+sudo make install 
+
+sudo ldconfig
+cd aarch64/bin
+ls
+ls images
+./detectnet-console.py images/peds_0.jpg output_0.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//install_________________________:
+pip install -r requirements.txt
+pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+
+//train_________________________:
+yolo task=detect mode=train epochs=5 data=data.yaml model=yolov8m.pt imgsz=640 batch=8 patience=128
+
+Run Yolo__________________:
+yolo task=detect mode=predict model=/home/otics/on/project_kamera_pt_oi_part_hla/best.pt show=True conf=0.5 source="rtsp://admin:pt_otics1*@192.168.1.108" save_txt=False line_width=1 show_labels=True
+
+
+
+CREATE TABLE table_adjuster_valve_hla (
+	id INTEGER PRIMARY KEY,
+	name_line TEXT NOT NULL,
+	name_part TEXT NOT NULL,
+	quantity TEXT NOT NULL ,
+	delay TEXT NOT NULL,
+    status TEXT NOT NULL,
+    andon TEXT NOT NULL,
+    datetime DEFAULT (DATETIME('now', 'localtime'))
+);
+
+
+//Jetson orin nano
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt install build-essential libssl-dev zliblg-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev liblzma-dev libffi-dev libffi-dev libc6-dev
+
+download python
+wget https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tar.xz
+tar -xf Python-3.8.12.tar.xz
+cd Python-3.8.12
+
+
